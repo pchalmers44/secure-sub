@@ -1,0 +1,66 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.9.0
+2 info using node@v24.14.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\pchal\OneDrive\Desktop\secure-sub\.npmrc
+5 silly config load:file:C:\Users\pchal\.npmrc
+6 silly config load:file:C:\Users\pchal\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install vitest @vitest/coverage-v8
+8 verbose argv "install" "--save-dev" "vitest" "@vitest/coverage-v8" "--cache" ".npm-cache"
+9 verbose logfile logs-max:10 dir:C:\Users\pchal\OneDrive\Desktop\secure-sub\.npm-cache\_logs\2026-03-16T14_41_09_415Z-
+10 verbose logfile C:\Users\pchal\OneDrive\Desktop\secure-sub\.npm-cache\_logs\2026-03-16T14_41_09_415Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly fetch manifest vitest@*
+16 silly packumentCache full:https://registry.npmjs.org/vitest cache-miss
+17 http fetch GET https://registry.npmjs.org/vitest attempt 1 failed with EACCES
+18 http fetch GET https://registry.npmjs.org/vitest attempt 2 failed with EACCES
+19 http fetch GET https://registry.npmjs.org/vitest attempt 3 failed with EACCES
+20 silly fetch manifest @vitest/coverage-v8@*
+21 silly packumentCache full:https://registry.npmjs.org/@vitest%2fcoverage-v8 cache-miss
+22 http fetch GET https://registry.npmjs.org/@vitest%2fcoverage-v8 attempt 1 failed with EACCES
+23 http fetch GET https://registry.npmjs.org/@vitest%2fcoverage-v8 attempt 2 failed with EACCES
+24 http fetch GET https://registry.npmjs.org/@vitest%2fcoverage-v8 attempt 3 failed with EACCES
+25 silly placeDep ROOT @vitest/coverage-v8@ OK for: secure-sub@0.1.0 want: *
+26 silly placeDep ROOT vitest@ OK for: secure-sub@0.1.0 want: *
+27 verbose type system
+28 verbose stack FetchError: request to https://registry.npmjs.org/@vitest%2fcoverage-v8 failed, reason: 
+28 verbose stack     at ClientRequest.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\minipass-fetch\lib\index.js:130:14)
+28 verbose stack     at ClientRequest.emit (node:events:508:28)
+28 verbose stack     at emitErrorEvent (node:_http_client:108:11)
+28 verbose stack     at _destroy (node:_http_client:963:9)
+28 verbose stack     at onSocketNT (node:_http_client:983:5)
+28 verbose stack     at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+29 error code EACCES
+30 error errno EACCES
+31 error FetchError: request to https://registry.npmjs.org/@vitest%2fcoverage-v8 failed, reason: 
+31 error     at ClientRequest.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\minipass-fetch\lib\index.js:130:14)
+31 error     at ClientRequest.emit (node:events:508:28)
+31 error     at emitErrorEvent (node:_http_client:108:11)
+31 error     at _destroy (node:_http_client:963:9)
+31 error     at onSocketNT (node:_http_client:983:5)
+31 error     at process.processTicksAndRejections (node:internal/process/task_queues:91:21) {
+31 error   code: 'EACCES',
+31 error   errno: 'EACCES',
+31 error   type: 'system',
+31 error   requiredBy: '.'
+31 error }
+32 error
+32 error The operation was rejected by your operating system.
+32 error It's possible that the file was already in use (by a text editor or antivirus),
+32 error or that you lack permissions to access it.
+32 error
+32 error If you believe this might be a permissions issue, please double-check the
+32 error permissions of the file and its containing directories, or try running
+32 error the command again as root/Administrator.
+33 silly unfinished npm timer reify 1773672070227
+34 silly unfinished npm timer reify:loadTrees 1773672070227
+35 verbose cwd C:\Users\pchal\OneDrive\Desktop\secure-sub
+36 verbose os Windows_NT 10.0.26200
+37 verbose node v24.14.0
+38 verbose npm  v11.9.0
+39 verbose exit 1
+40 verbose code 1
+41 error A complete log of this run can be found in: C:\Users\pchal\OneDrive\Desktop\secure-sub\.npm-cache\_logs\2026-03-16T14_41_09_415Z-debug-0.log

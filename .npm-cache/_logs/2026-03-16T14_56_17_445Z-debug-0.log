@@ -1,0 +1,101 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.9.0
+2 info using node@v24.14.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\pchal\OneDrive\Desktop\secure-sub\.npmrc
+5 silly config load:file:C:\Users\pchal\.npmrc
+6 silly config load:file:C:\Users\pchal\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install vitest@3.2.4 @vitest/coverage-v8@3.2.4
+8 verbose argv "install" "--save-dev" "vitest@3.2.4" "@vitest/coverage-v8@3.2.4" "--cache" ".npm-cache"
+9 verbose logfile logs-max:10 dir:C:\Users\pchal\OneDrive\Desktop\secure-sub\.npm-cache\_logs\2026-03-16T14_56_17_445Z-
+10 verbose logfile C:\Users\pchal\OneDrive\Desktop\secure-sub\.npm-cache\_logs\2026-03-16T14_56_17_445Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly fetch manifest @vitest/coverage-v8@3.2.4
+16 silly packumentCache full:https://registry.npmjs.org/@vitest%2fcoverage-v8 cache-miss
+17 http fetch GET https://registry.npmjs.org/@vitest%2fcoverage-v8 attempt 1 failed with EACCES
+18 http fetch GET https://registry.npmjs.org/@vitest%2fcoverage-v8 attempt 2 failed with EACCES
+19 http fetch GET https://registry.npmjs.org/@vitest%2fcoverage-v8 attempt 3 failed with EACCES
+20 http fetch GET 200 https://registry.npmjs.org/@vitest%2fcoverage-v8 70142ms (cache stale)
+21 silly packumentCache full:https://registry.npmjs.org/@vitest%2fcoverage-v8 set size:466881 disposed:false
+22 silly fetch manifest @vitest/browser@3.2.4
+23 silly packumentCache full:https://registry.npmjs.org/@vitest%2fbrowser cache-miss
+24 http fetch GET https://registry.npmjs.org/@vitest%2fbrowser attempt 1 failed with EACCES
+25 http fetch GET https://registry.npmjs.org/@vitest%2fbrowser attempt 2 failed with EACCES
+26 http fetch GET https://registry.npmjs.org/@vitest%2fbrowser attempt 3 failed with EACCES
+27 http fetch GET 200 https://registry.npmjs.org/@vitest%2fbrowser 70058ms (cache stale)
+28 silly packumentCache full:https://registry.npmjs.org/@vitest%2fbrowser set size:715547 disposed:false
+29 silly fetch manifest playwright@*
+30 silly packumentCache full:https://registry.npmjs.org/playwright cache-miss
+31 http fetch GET https://registry.npmjs.org/playwright attempt 1 failed with EACCES
+32 http fetch GET https://registry.npmjs.org/playwright attempt 2 failed with EACCES
+33 http fetch GET https://registry.npmjs.org/playwright attempt 3 failed with EACCES
+34 http fetch GET 200 https://registry.npmjs.org/playwright 70073ms (cache stale)
+35 silly packumentCache full:https://registry.npmjs.org/playwright set size:15848114 disposed:false
+36 silly fetch manifest vitest@3.2.4
+37 silly packumentCache full:https://registry.npmjs.org/vitest cache-miss
+38 http fetch GET https://registry.npmjs.org/vitest attempt 1 failed with EACCES
+39 http fetch GET https://registry.npmjs.org/vitest attempt 2 failed with EACCES
+40 http fetch GET https://registry.npmjs.org/vitest attempt 3 failed with EACCES
+41 http fetch GET 200 https://registry.npmjs.org/vitest 70064ms (cache stale)
+42 silly packumentCache full:https://registry.npmjs.org/vitest set size:2108986 disposed:false
+43 silly fetch manifest @edge-runtime/vm@*
+44 silly packumentCache full:https://registry.npmjs.org/@edge-runtime%2fvm cache-miss
+45 http fetch GET https://registry.npmjs.org/@edge-runtime%2fvm attempt 1 failed with EACCES
+46 http fetch GET https://registry.npmjs.org/@edge-runtime%2fvm attempt 2 failed with EACCES
+47 http fetch GET https://registry.npmjs.org/@edge-runtime%2fvm attempt 3 failed with EACCES
+48 http fetch GET 200 https://registry.npmjs.org/@edge-runtime%2fvm 70073ms (cache stale)
+49 silly packumentCache full:https://registry.npmjs.org/@edge-runtime%2fvm set size:269934 disposed:false
+50 silly fetch manifest @types/debug@^4.1.12
+51 silly packumentCache full:https://registry.npmjs.org/@types%2fdebug cache-miss
+52 http fetch GET https://registry.npmjs.org/@types%2fdebug attempt 1 failed with EACCES
+53 http fetch GET https://registry.npmjs.org/@types%2fdebug attempt 2 failed with EACCES
+54 http fetch GET https://registry.npmjs.org/@types%2fdebug attempt 3 failed with EACCES
+55 silly fetch manifest @types/node@^20
+56 silly packumentCache full:https://registry.npmjs.org/@types%2fnode cache-miss
+57 http fetch GET https://registry.npmjs.org/@types%2fnode attempt 1 failed with EACCES
+58 http fetch GET https://registry.npmjs.org/@types%2fnode attempt 2 failed with EACCES
+59 http fetch GET https://registry.npmjs.org/@types%2fnode attempt 3 failed with EACCES
+60 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 70059ms (cache stale)
+61 silly packumentCache full:https://registry.npmjs.org/@types%2fnode set size:10939971 disposed:false
+62 silly fetch manifest @vitest/ui@3.2.4
+63 silly packumentCache full:https://registry.npmjs.org/@vitest%2fui cache-miss
+64 http fetch GET https://registry.npmjs.org/@vitest%2fui attempt 1 failed with EACCES
+65 http fetch GET https://registry.npmjs.org/@vitest%2fui attempt 2 failed with EACCES
+66 http fetch GET https://registry.npmjs.org/@vitest%2fui attempt 3 failed with EACCES
+67 http fetch GET 200 https://registry.npmjs.org/@vitest%2fui 70055ms (cache stale)
+68 silly packumentCache full:https://registry.npmjs.org/@vitest%2fui set size:1204575 disposed:false
+69 silly fetch manifest happy-dom@*
+70 silly packumentCache full:https://registry.npmjs.org/happy-dom cache-miss
+71 http fetch GET https://registry.npmjs.org/happy-dom attempt 1 failed with EACCES
+72 http fetch GET https://registry.npmjs.org/happy-dom attempt 2 failed with EACCES
+73 http fetch GET https://registry.npmjs.org/happy-dom attempt 3 failed with EACCES
+74 http fetch GET 200 https://registry.npmjs.org/happy-dom 70040ms (cache stale)
+75 silly packumentCache full:https://registry.npmjs.org/happy-dom set size:2441278 disposed:false
+76 silly fetch manifest jsdom@*
+77 silly packumentCache full:https://registry.npmjs.org/jsdom cache-miss
+78 http fetch GET https://registry.npmjs.org/jsdom attempt 1 failed with EACCES
+79 http fetch GET https://registry.npmjs.org/jsdom attempt 2 failed with EACCES
+80 http fetch GET https://registry.npmjs.org/jsdom attempt 3 failed with EACCES
+81 http fetch GET 200 https://registry.npmjs.org/jsdom 70084ms (cache stale)
+82 silly packumentCache full:https://registry.npmjs.org/jsdom set size:1046697 disposed:false
+83 silly fetch manifest canvas@^3.0.0
+84 silly packumentCache full:https://registry.npmjs.org/canvas cache-miss
+85 http fetch GET https://registry.npmjs.org/canvas attempt 1 failed with EACCES
+86 http fetch GET https://registry.npmjs.org/canvas attempt 2 failed with EACCES
+87 http fetch GET https://registry.npmjs.org/canvas attempt 3 failed with EACCES
+88 http fetch GET 200 https://registry.npmjs.org/canvas 70049ms (cache stale)
+89 silly packumentCache full:https://registry.npmjs.org/canvas set size:366497 disposed:false
+90 silly fetch manifest webdriverio@^7.0.0 || ^8.0.0 || ^9.0.0
+91 silly packumentCache full:https://registry.npmjs.org/webdriverio cache-miss
+92 http fetch GET https://registry.npmjs.org/webdriverio attempt 1 failed with EACCES
+93 http fetch GET https://registry.npmjs.org/webdriverio attempt 2 failed with EACCES
+94 http fetch GET https://registry.npmjs.org/webdriverio attempt 3 failed with EACCES
+95 http fetch GET 200 https://registry.npmjs.org/webdriverio 70042ms (cache stale)
+96 silly packumentCache full:https://registry.npmjs.org/webdriverio set size:3119556 disposed:false
+97 silly fetch manifest puppeteer-core@>=22.x || <=24.x
+98 silly packumentCache full:https://registry.npmjs.org/puppeteer-core cache-miss
+99 http fetch GET https://registry.npmjs.org/puppeteer-core attempt 1 failed with EACCES
+100 http fetch GET https://registry.npmjs.org/puppeteer-core attempt 2 failed with EACCES
