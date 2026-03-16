@@ -1,12 +1,9 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { getServerSession } from "next-auth";
 
 import { handleApi, parseJson } from "@/lib/api/handler";
-import { authOptions } from "@/lib/auth";
 import { createCheckoutSessionSchema } from "@/lib/validation/stripe";
 import { createSubscriptionCheckoutSession } from "@/services/stripeBillingService";
-import { jsonError } from "@/utils/api";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -15,15 +12,23 @@ export async function POST(req: NextRequest) {
   return handleApi(
     req,
     async () => {
-      const session = await getServerSession(authOptions);
-      const userId = (session?.user as { id?: string } | undefined)?.id ?? null;
-      if (!userId) {
-        return jsonError("Unauthorized.", { status: 401, code: "UNAUTHORIZED" });
+      const body = await parseJson(req, createCheckoutSessionSchema);
+      const demoUserId = process.env.STRIPE_DEMO_USER_ID;
+      if (!demoUserId) {
+        return NextResponse.json(
+          {
+            error: {
+              message:
+                "Stripe checkout is disabled in this build. Set STRIPE_DEMO_USER_ID to enable demo checkout.",
+              code: "STRIPE_CHECKOUT_DISABLED",
+            },
+          },
+          { status: 501 },
+        );
       }
 
-      const body = await parseJson(req, createCheckoutSessionSchema);
       const checkout = await createSubscriptionCheckoutSession({
-        userId,
+        userId: demoUserId,
         priceId: body.priceId,
         successUrl: body.successUrl,
         cancelUrl: body.cancelUrl,
@@ -37,4 +42,3 @@ export async function POST(req: NextRequest) {
     },
   );
 }
-

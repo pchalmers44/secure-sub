@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
-import { Providers } from "@/components/providers/Providers";
 import { Container } from "@/components/ui/Container";
 import { fontVariablesClassName } from "@/lib/fonts";
 import { siteConfig } from "@/lib/site";
@@ -20,15 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${fontVariablesClassName} antialiased`}>
-        <Providers>
-          <div className="flex min-h-screen flex-col bg-white text-black">
-            <Navbar />
-            <main className="flex-1">
-              <Container className="py-10">{children}</Container>
-            </main>
-            <Footer />
-          </div>
-        </Providers>
+        <div className="flex min-h-screen flex-col bg-white text-black">
+          <Navbar />
+          <main className="flex-1">
+            <Container className="py-10">{children}</Container>
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

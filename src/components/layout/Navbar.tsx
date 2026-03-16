@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-import { NavbarAuthButton } from "@/components/layout/NavbarAuthButton";
 import { Container } from "@/components/ui/Container";
 import { cn } from "@/utils/cn";
 
@@ -31,9 +30,7 @@ export function Navbar() {
           </nav>
         </div>
 
-        <div className="flex items-center gap-2">
-          <NavbarAuthButton />
-        </div>
+        <div className="flex items-center gap-2" />
       </Container>
     </header>
   );
