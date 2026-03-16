@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/Button";
 
 export function NavbarAuthButton() {
   const { status } = useSession();
+  if (process.env.NEXT_PUBLIC_PUBLIC_DEMO === "1") return null;
 
   return (
     <div className="flex items-center gap-2">

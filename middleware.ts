@@ -3,6 +3,10 @@ import type { NextRequest } from "next/server";
 import { getToken } from "next-auth/jwt";
 
 export async function middleware(req: NextRequest) {
+  if (process.env.PUBLIC_DEMO === "1") {
+    return NextResponse.next();
+  }
+
   const secret = process.env.NEXTAUTH_SECRET;
   if (!secret) {
     const url = req.nextUrl.clone();
@@ -26,4 +30,3 @@ export async function middleware(req: NextRequest) {
 export const config = {
   matcher: ["/dashboard/:path*"],
 };
-

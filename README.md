@@ -57,6 +57,7 @@ Key modules:
 
 - Node.js (modern LTS recommended)
 - PostgreSQL database
+- Docker Desktop (recommended for local Postgres)
 - Stripe account (for billing)
 
 ### Install dependencies
@@ -90,10 +91,22 @@ Generate Prisma client:
 npm run prisma:generate
 ```
 
+Start a local Postgres database (recommended):
+
+```bash
+docker compose up -d
+```
+
 Create/update tables in development:
 
 ```bash
 npx prisma migrate dev
+```
+
+Or run everything in one step on Windows:
+
+```powershell
+.\scripts\setup.ps1
 ```
 
 This repo includes models for `User`, `Subscription`, `Invoice`, and `AuditLog`. Stripe IDs are stored on `User`/`Subscription`/`Invoice` to support syncing.
